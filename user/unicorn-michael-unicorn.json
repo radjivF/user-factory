@@ -1,0 +1,17 @@
+{
+  "group": "Unicorn",
+  "displayName": "Michael Unicorn",
+  "login": "michael@corn.com",
+  "password": "wetransform2015",
+  "passwordHashed": "true",
+  "addresses": "Address",
+  "photos": [],
+  "emails": {
+    "value": "michael@corn.com"
+  },
+  "role": [],
+  "name": {
+    "familyName": "Unicorn",
+    "givenName": "Michael"
+  }
+}
