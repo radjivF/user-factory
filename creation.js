@@ -10,7 +10,7 @@ var config = require('./config.json');
 var file = require('./output.json');
 
 var list = file;
-var providerFromConsole= config.group;
+var groupFromConsole= config.group;
 var passwordFromConsole = config.password;
 var roleFromConsole = config.role;
 
@@ -20,7 +20,7 @@ for(var i = 0; i < list.length;i++){
     var prenomFromConsole = list[i].prenom;
     var mailAdressFromConsole = list[i].email;
 
-    var providerDiacritics = removeDiacritics(providerFromConsole);
+    var providerDiacritics = removeDiacritics(groupFromConsole);
     var nomDiacritics = removeDiacritics(nomFromConsole);
     var prenomDiacritics = removeDiacritics(prenomFromConsole);
     var mailDiacritics = removeDiacritics(mailAdressFromConsole);
@@ -42,7 +42,7 @@ for(var i = 0; i < list.length;i++){
 
     //creation of the json Object
     jsonObject = {
-        "groups" : group,
+        "group" : provider,
         "displayName" : prenom+" "+nom,
         "login" : mailAdress,
         "password" : password,
