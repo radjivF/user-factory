@@ -3,10 +3,9 @@
 Open the config.json and put the provider and the password:
 
 ```
-{
-	"provider":"myProvider",
-	"password": "mypassword"
-}
+        "group":"unicorn",
+	"password": "wetransform2015",
+	"role": []
 ```
 
 #Your data
@@ -21,7 +20,6 @@ Launch the script
 
 ```
 sh start.sh
-
 ```
 
 AND MAGIC!!!
