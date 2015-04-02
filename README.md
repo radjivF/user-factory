@@ -1,11 +1,11 @@
-#Choose your provider and password
+#Choose your group and password
 
 Open the config.json and put the provider and the password:
 
 ```
-        "group":"unicorn",
-	"password": "wetransform2015",
-	"role": []
+"group":"unicorn",
+"password": "wetransform2015",
+"role": []
 ```
 
 #Your data
