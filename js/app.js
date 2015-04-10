@@ -1,5 +1,6 @@
 var im = require('imagemagick');
-var path = require ('path')
+var path = require ('path');
+var excel = require('./js/extractExcel.js')
 
 window.ondragover = function(e){
 	e.preventDefault(); return false;
@@ -26,8 +27,11 @@ el.ondrop = function(e){
 	e.preventDefault();
 	for(var i=0; i < e.dataTransfer.files.length; ++i){
 		var file= e.dataTransfer.files[i].path;
-		console.log(path.extname(file));
+		console.log( );
 		if(path.extname(file)== ".xlsx"){
+
+
+			excel.extractExcel(file);
 			el.className =  "";
 			el.innerHTML ="travail terminé";
 			var audio  = new Audio('sound/done.ogg');

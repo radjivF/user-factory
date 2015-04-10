@@ -1,6 +1,5 @@
-exports.user = user;
 
-user = {
+var user = {
     "provider" : "",
     "providerUserId" : "",
     "displayName" : "",
@@ -60,3 +59,5 @@ user = {
 
     }
 };
+
+exports.user = user;
