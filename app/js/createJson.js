@@ -8,6 +8,8 @@ var util = require('util');
 var path = require('path');
 var template = require('../template/template-basic.js');
 var zip =require('../js/zip.js');
+var mkdirp = require('mkdirp');
+
 
 exports.createJson = function(data, pathFile){
 	
@@ -16,7 +18,7 @@ exports.createJson = function(data, pathFile){
 	var FolderPath = path.dirname(pathFile);
 	var zipName = path.basename(pathFile, '.xlsx');
 	var zipFolderPath=FolderPath+'/'+zipName;
-	fs.mkdirSync(zipFolderPath);
+	mkdirp.sync(zipFolderPath);
 
 	for (var i = 0; i < data.length; i++) {
 

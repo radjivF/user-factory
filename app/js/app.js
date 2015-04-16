@@ -30,7 +30,6 @@ el.ondrop = function(e){
 		console.log( );
 		if(path.extname(file)== ".xlsx"){
 
-
 			excel.extractExcel(file);
 			el.className =  "";
 			el.innerHTML ="travail terminé";
