@@ -14,7 +14,28 @@
 		</div> -->
 		<div id="preferences">
 			<center><h3>Bienvenue sur UserFactory</h3> </center><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cette outil permet de creer les Jsons des utilisateurs
-			<ul>- Creer un utilisateur <button>creer</button></ul>
+			<ul>- Creer un utilisateur </ul>
+
+
+				<p><label for="name">Nom: </label><input type="text" name="name" id="txt_name"></p>
+				<p><label for="prenom">Prenom: </label><input type="text" name="prenom" id="txt_prenom"></p>
+				<p><label for="email">Email: </label><input type="text" name="email" id="txt_email"></p>
+				<p><label for="password">Password: </label><input type="text" name="password" id="txt_password"></p>
+				<p><label for="role">Role: </label><input type="text" name="role" id="txt_role"></p>
+				<p><label for="provider">Provider: </label><input type="text" name="provider" id="txt_provider"></p>
+
+				<p><input class="btn btn-primary" type="button" name="submit" value="submit" onclick="processFormData();" ></p>
+
+
+<!-- 			<form name="newuser" id ="newuser" action ="#">
+				  <input type="text" class="form-control" placeholder="nom" id="name" aria-describedby="basic-addon1">
+				  <input type="text" class="form-control" placeholder="prenom" id="prenom" aria-describedby="basic-addon1">
+				  <input type="text" class="form-control" placeholder="email" id="email" aria-describedby="basic-addon1">
+				  <input type="text" class="form-control" placeholder="provider" id="provider" aria-describedby="basic-addon1">
+				  <input type="text" class="form-control" placeholder="password" id="password" aria-describedby="basic-addon1">
+				  <input type="text" class="form-control" placeholder="role" id="role" aria-describedby="basic-addon1">
+				  <center><button type="button" class="btn btn-primary" name="creer" value="creer" onclick="processFormData();"/></center>
+			</form> -->
 			<ul>- Creer une liste d'utilisateur via un Excel, Glisser votre Excel ci-dessous (l'excel doit posseder les colonnes: prenom, nom, email, provider,password. Attention aux cellules vides)</ul>
 		</div>
 		<div id="drop">

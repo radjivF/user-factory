@@ -18,6 +18,8 @@
     "lodash": "^3.6.0",
     "mkdirp": "^0.5.0",
     "path": "^0.11.14",
+    "path-extra": "^1.0.2",
+    "string": "^3.1.1",
     "xlsx-to-json": "^0.2.3"
   }
 }
