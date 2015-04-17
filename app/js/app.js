@@ -52,7 +52,7 @@ function processFormData()
 {
 
   var name_element = document.getElementById('txt_name');
-  var prenom_element = document.getElementById('txt_prenom');
+  var firstname_element = document.getElementById('txt_firstname');
   var email_element = document.getElementById('txt_email'); 
   var password_element = document.getElementById('txt_password');
   var role_element = document.getElementById('txt_role');
@@ -60,7 +60,7 @@ function processFormData()
 
 
   var name = name_element.value;
-  var prenom = prenom_element.value;
+  var firstname = firstname_element.value;
   var email = email_element.value;
   var password = password_element.value;
   var role = role_element.value;
@@ -71,16 +71,16 @@ function processFormData()
 
   var error_flag = false;
 
-  if(name == '' && prenom== '' && email== '' && password== '' && provider== '' ) {
+  if(name == '' || firstname== '' || email== '' || password== '' || provider== '' ) {
 	  error_flag = true;
   } else {
-	  data += 'Name: ' + name + '\n'  +'prenom: ' + prenom + '\n' +'password: ' + password + '\n' +'role: ' + role + '\n' +'email: ' + email + '\n';
+	  data += 'Name: ' + name + '\n'  +'firstname: ' + firstname + '\n' +'password: ' + password + '\n' +'role: ' + role + '\n' +'email: ' + email + '\n';
   }
 
   if(error_flag) {
-	  alert('nom, prenom, email, password, provider doivent etre renseigner');
+	  alert('nom, firstname, email, password, provider doivent etre renseigner');
   } else {
-	createJson.createOneJson(name, prenom, email, provider, password, role);
+	createJson.createOneJson(name, firstname, email, provider, password, role);
 
   }
 

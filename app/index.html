@@ -13,30 +13,43 @@
 			Mot de passe: <input type="text" name="password"><br> </center>
 		</div> -->
 		<div id="preferences">
-			<center><h3>Bienvenue sur UserFactory</h3> </center><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cette outil permet de creer les Jsons des utilisateurs
-			<ul>- Creer un utilisateur </ul>
+			<center><h3>Bienvenue sur UserFactory</h3>Cette outil permet de créer les Json des utilisateurs</center>
+			<h4> Créer un utilisateur </h4>
 
 
-				<p><label for="name">Nom: </label><input type="text" name="name" id="txt_name"></p>
-				<p><label for="prenom">Prenom: </label><input type="text" name="prenom" id="txt_prenom"></p>
-				<p><label for="email">Email: </label><input type="text" name="email" id="txt_email"></p>
-				<p><label for="password">Password: </label><input type="text" name="password" id="txt_password"></p>
-				<p><label for="role">Role: </label><input type="text" name="role" id="txt_role"></p>
-				<p><label for="provider">Provider: </label><input type="text" name="provider" id="txt_provider"></p>
+				<table>
+					<tr>
+						<td><label for="name">Nom: </label></td>
+						<td><input type="text" name="name" id="txt_name"></td>
+					</tr>	
+					<tr>
+						<td><label for="prenom">Prenom: </label></td>
+						<td><input type="text" name="prenom" id="txt_firstname"></td>
+					</tr>
+						<td><label for="email">Email: </label></td>
+						<td><input type="text" name="email" id="txt_email"></td>
 
-				<p><input class="btn btn-primary" type="button" name="submit" value="submit" onclick="processFormData();" ></p>
+					</tr>
+					<tr>	
+						<td><label for="password">Password: </label></td>
+						<td><input type="text" name="password" id="txt_password"></td>
+					</tr>
+					<tr>
+						<td><label for="role">Role: </label></td>
+						<td><input type="text" name="role" id="txt_role"></td>
+					</tr>
+					<tr>
+						<td><label for="provider">Provider: </label></td>
+						<td><input type="text" name="provider" id="txt_provider"></td>
+					</tr>
+					
 
-
-<!-- 			<form name="newuser" id ="newuser" action ="#">
-				  <input type="text" class="form-control" placeholder="nom" id="name" aria-describedby="basic-addon1">
-				  <input type="text" class="form-control" placeholder="prenom" id="prenom" aria-describedby="basic-addon1">
-				  <input type="text" class="form-control" placeholder="email" id="email" aria-describedby="basic-addon1">
-				  <input type="text" class="form-control" placeholder="provider" id="provider" aria-describedby="basic-addon1">
-				  <input type="text" class="form-control" placeholder="password" id="password" aria-describedby="basic-addon1">
-				  <input type="text" class="form-control" placeholder="role" id="role" aria-describedby="basic-addon1">
-				  <center><button type="button" class="btn btn-primary" name="creer" value="creer" onclick="processFormData();"/></center>
-			</form> -->
-			<ul>- Creer une liste d'utilisateur via un Excel, Glisser votre Excel ci-dessous (l'excel doit posseder les colonnes: prenom, nom, email, provider,password. Attention aux cellules vides)</ul>
+				</table>
+				<center><input class="btn"  name="submit" value="Créer" onclick="processFormData();" ></center>
+			<br/>	
+			<h4>Créer une liste d'utilisateur via un tableau Excel </h4>
+			<p>Le fichier doit posséder les colonnes suivantes (Attention aux cellules vides):</p>
+			<p><ul>firstname, lastname, email, provider, password</p>
 		</div>
 		<div id="drop">
 			Déposez votre fichier
