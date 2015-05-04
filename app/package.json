@@ -4,7 +4,7 @@
   "main": "index.html",
   "window": {
     "toolbar": false,
-    "height": 620,
+    "height": 680,
     "width": 490,
     "frame": true
   }
