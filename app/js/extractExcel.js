@@ -1,7 +1,7 @@
 var xlsxj = require('xlsx-to-json');
 var user =require('../js/createJson.js');
 
-exports.extractExcel = function(path, callback){
+exports.extractExcel = function(path,languageCheckbox, callback){
   xlsxj({
     input: path, 
     output: "output.json"
@@ -9,7 +9,7 @@ exports.extractExcel = function(path, callback){
     if(err) {
       console.error(err);
     }else {
-      user.createJson(result, path);
+      user.createJson(result, path , languageCheckbox);
 
     }
   }); 	

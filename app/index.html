@@ -13,9 +13,10 @@
 			Mot de passe: <input type="text" name="password"><br> </center>
 		</div> -->
 		<div id="preferences">
-			<center><h3>Bienvenue sur UserFactory</h3>Cette outil permet de créer les Json des utilisateurs</center>
+			<center><h3>Bienvenue sur UserFactory</h3>Cette outil permet de créer les Json des utilisateurs <br> 
+				<input type="checkbox" onclick="handleClick(this);" name="language" id="language_checkbox" value="language"> Plateforme multilangue? 
+			</center>
 			<h4> Créer un utilisateur </h4>
-
 
 				<table>
 					<tr>
@@ -42,14 +43,18 @@
 						<td><label for="provider">Provider: </label></td>
 						<td><input type="text" name="provider" id="txt_provider"></td>
 					</tr>
-					
+					<tr>
+						
 
+						<td><label for="provider">langue: </label></td>
+						<td><input type="text" name="txt_language" id="txt_language" disabled="disabled"></td>
+					</tr>
 				</table>
 				<center><input class="btn"  name="submit" value="Créer" onclick="processFormData();" ></center>
 			<br/>	
 			<h4>Créer une liste d'utilisateur via un tableau Excel </h4>
 			<p>Le fichier doit posséder les colonnes suivantes (Attention aux cellules vides):</p>
-			<p><ul>firstname, lastname, email, provider, password</p>
+			<p>firstname, lastname, email, provider, password, language (si wetransform)</p>
 		</div>
 		<div id="drop">
 			Déposez votre fichier
