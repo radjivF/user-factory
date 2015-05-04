@@ -8,23 +8,20 @@
 	</head>
 
 	<body>
-<!-- 		<div id= "preferences">
-			&nbsp;Provider: <input type="text" name="provider">
-			Mot de passe: <input type="text" name="password"><br> </center>
-		</div> -->
+
 		<div id="preferences">
-			<center><h3>Bienvenue sur UserFactory</h3>Cette outil permet de créer les Json des utilisateurs <br> 
-				<input type="checkbox" onclick="handleClick(this);" name="language" id="language_checkbox" value="language"> Plateforme multilangue? 
+			<center><h3>Welcome to the UserFactory</h3>This tool can create Json files for user <br> 
+				<input type="checkbox" onclick="handleClick(this);" name="language" id="language_checkbox" value="language">  multilanguage support
 			</center>
-			<h4> Créer un utilisateur </h4>
+			<h4> Create one user </h4>
 
 				<table>
 					<tr>
-						<td><label for="name">Nom: </label></td>
+						<td><label for="name">Name: </label></td>
 						<td><input type="text" name="name" id="txt_name"></td>
 					</tr>	
 					<tr>
-						<td><label for="prenom">Prenom: </label></td>
+						<td><label for="prenom">firstname: </label></td>
 						<td><input type="text" name="prenom" id="txt_firstname"></td>
 					</tr>
 						<td><label for="email">Email: </label></td>
@@ -52,12 +49,12 @@
 				</table>
 				<center><input class="btn"  name="submit" value="Créer" onclick="processFormData();" ></center>
 			<br/>	
-			<h4>Créer une liste d'utilisateur via un tableau Excel </h4>
-			<p>Le fichier doit posséder les colonnes suivantes (Attention aux cellules vides):</p>
-			<p>firstname, lastname, email, provider, password, language (si wetransform)</p>
+			<h4>Create a list of users with an excel file </h4>
+			<p>The file need to have the columns: (Be carefull with empty cells):</p>
+			<p>firstname, lastname, email, provider, password, language (if multilanguage support)</p>
 		</div>
 		<div id="drop">
-			Déposez votre fichier
+			Drag your file
 		</div>
 	</body>
 	<script src="js/app.js" type="text/javascript"></script>

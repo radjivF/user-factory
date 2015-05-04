@@ -26,7 +26,7 @@ exports.createJson = function(data, pathFile, languageCheckbox){
 		template = templateBasic;
 	}
 	console.log(JSON.stringify(template));
-	//creation of the folder 
+
 	
 	var FolderPath = path.dirname(pathFile);
 	var zipName = path.basename(pathFile, '.xlsx');
@@ -102,9 +102,4 @@ exports.createOneJson = function(name, firstname, email, provider, password, rol
     var file = fileName;
     jf.writeFileSync(file, template.user);
 
-// erreur zip comrompu	
-//	var nameZip =zipFolderPath+'/Desktop'+'/' +provider+"-"+firstname+"-"+name+'.zip';
-// 	var zipJson = new easyzip.EasyZip();
-// 	zipJson.file(fileName);
-// 	zipJson.writeToFile('test.zip');
 }

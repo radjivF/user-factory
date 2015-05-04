@@ -11,16 +11,21 @@ window.ondrop = function(e){
 	e.preventDefault(); return false;	
 };
 
+/*
+	drag over excel event
+*/
 var el = document.querySelector('#drop');
 el.ondragover = function(){
 	this.className ="hover";
-	this.innerHTML ="Glisse ton fichier";
+	this.innerHTML ="Drop your file";
 	return false;
 };
-
+/*
+	drag leave excel event
+*/
 el.ondragleave = function(){
 	this.className = "";
-	this.innerHTML = "Dépose ton fichier excel";
+	this.innerHTML = "Drag your file";
 	return false;
 };
 
@@ -29,23 +34,23 @@ el.ondragleave = function(){
 */
 el.ondrop = function(e){
 	var languageCheckbox = document.getElementById('language_checkbox').checked;
-//	console.log(languageCheckbox);
+
 	e.preventDefault();
 	for(var i=0; i < e.dataTransfer.files.length; ++i){
 		var file= e.dataTransfer.files[i].path;
 
 		if(path.extname(file)== ".xlsx"){
-//				console.log('app.js apres drop'+languageCheckbox);
+
 			excel.extractExcel(file , languageCheckbox);
 			el.className =  "";
-			el.innerHTML ="travail terminé";
+			el.innerHTML ="work is done";
 			var audio  = new Audio('sound/done.ogg');
 			audio.volume= 0.2;
 			audio.play();
 		}
 		else{
 			el.style.color = 'red';
-			el.innerHTML ="Fichier excel requis";			
+			el.innerHTML ="only excel file";			
 		}
 		
 	}
@@ -94,7 +99,7 @@ function processFormData()
   }
 
   if(error_flag) {
-	  alert('nom, firstname, email, password, provider, language doivent etre renseigner');
+	  alert('nom, firstname, email, password, provider need to exist');
   } else {
 	createJson.createOneJson(name, firstname, email, provider, password, role, language, languageCheckbox);
   }
