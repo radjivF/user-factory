@@ -44,10 +44,14 @@
 						
 
 						<td><label for="provider">langue: </label></td>
-						<td><input type="text" name="txt_language" id="txt_language" disabled="disabled"></td>
+						<td><select  name="txt_language" id="txt_language" disabled="disabled">
+							<option value="en">en</option>
+							<option value="fr">fr</option>
+						</select></td></td>
+							
 					</tr>
 				</table>
-				<center><input class="btn"  name="submit" value="Créer" onclick="processFormData();" ></center>
+				<center><input class="btn"  name="submit" value="Créer" onclick="processFormData();" readonly></center>
 			<br/>	
 			<h4>Create a list of users with an excel file </h4>
 			<p>The file need to have the columns: (Be carefull with empty cells):</p>

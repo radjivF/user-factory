@@ -14,7 +14,14 @@ var user = {
         "familyName" : "",
         "givenName" : ""
 
-    }
+    },
+    "emails" : [
+        {
+            "value" : "",
+            "type" : "work",
+            "primary" : true
+        }
+    ]
 };
 
 exports.user = user;

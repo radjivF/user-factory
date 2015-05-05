@@ -73,21 +73,22 @@ function handleClick(cb) {
 function processFormData() 
 {
 
-	var name_element = document.getElementById('txt_name');
-	var firstname_element = document.getElementById('txt_firstname');
-	var email_element = document.getElementById('txt_email'); 
-	var password_element = document.getElementById('txt_password');
-	var role_element = document.getElementById('txt_role');
-	var provider_element = document.getElementById('txt_provider');
-	var language_element = document.getElementById('txt_language');
-	var languageCheckbox = document.getElementById('language_checkbox').checked;
-	var name = name_element.value;
-	var firstname = firstname_element.value;
-	var email = email_element.value;
-	var password = password_element.value;
-	var role = role_element.value;
-	var provider = provider_element.value;
-	var language = language_element.value;
+  var name_element = document.getElementById('txt_name');
+  var firstname_element = document.getElementById('txt_firstname');
+  var email_element = document.getElementById('txt_email'); 
+  var password_element = document.getElementById('txt_password');
+  var role_element = document.getElementById('txt_role');
+  var provider_element = document.getElementById('txt_provider');
+  var language_element = document.getElementById('txt_language');
+  var languageCheckbox = document.getElementById('language_checkbox').checked; 
+
+  var name = name_element.value;
+  var firstname = firstname_element.value;
+  var email = email_element.value;
+  var password = password_element.value;
+  var role = role_element.value;
+  var provider = provider_element.value;
+  var language = language_element.value;
 
   var data = 'You entered the following information: \n\n';
   var error_flag = false;
@@ -99,8 +100,10 @@ function processFormData()
   }
 
   if(error_flag) {
-	  alert('nom, firstname, email, password, provider need to exist');
+	  alert('nom, firstname, email, password, provider, language doivent etre renseigner');
   } else {
+	  console.log(email)
+
 	createJson.createOneJson(name, firstname, email, provider, password, role, language, languageCheckbox);
   }
 
