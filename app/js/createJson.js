@@ -15,8 +15,6 @@ var easyzip = require('easy-zip');
 
 
 
-
-
 exports.createJson = function(data, pathFile, languageCheckbox){
 	console.log(typeof languageCheckbox + languageCheckbox);
 	var template = templateBasic;
@@ -64,7 +62,7 @@ exports.createJson = function(data, pathFile, languageCheckbox){
 }
 
 exports.createOneJson = function(name, firstname, email, provider, password, role, language, languageCheckbox){
-	console.log(languageCheckbox)
+
 	var template = templateBasic;
 	if (languageCheckbox == true) {
 		template = templateLangue;
@@ -82,7 +80,7 @@ exports.createOneJson = function(name, firstname, email, provider, password, rol
 	password =  password;
 	//var role = role.split(',');
 	role = role.split(', ');
-	console.log(role);
+
 
 	template.user.name.familyName = name;
 	template.user.name.givenName = firstname;
@@ -93,9 +91,6 @@ exports.createOneJson = function(name, firstname, email, provider, password, rol
     template.user.login = email;
     template.user.password = password;
     template.user.role= role;
-	if(languageCheckbox == true){
-		template.user.language = language;
-	}
 
 	var fileName= zipFolderPath+'/Desktop'+'/' +provider+"-"+firstname+"-"+name+".json";
     var jsonString =  JSON.stringify(template.user);
