@@ -1,0 +1,26 @@
+{
+  "name": "UserFactory",
+  "version": "1.0.0",
+  "main": "index.html",
+  "window": {
+    "toolbar": false,
+    "height": 740,
+    "width": 555,
+    "frame": true
+  },
+  "dependencies": {
+    "change-case": "^2.3.0",
+    "diacritics": "^1.2.1",
+    "easy-zip": "0.0.4",
+    "excel": "^0.1.2",
+    "fs": "0.0.2",
+    "fs-extra": "^0.18.1",
+    "jszip": "^2.5.0",
+    "mkdirp": "^0.5.0",
+    "path": "^0.11.14",
+    "path-extra": "^1.0.2",
+    "string": "^3.1.1",
+    "xlsx-to-json": "^0.2.3",
+    "lodash": "^3.8.0"
+  }
+}

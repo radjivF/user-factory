@@ -1,0 +1,39 @@
+{
+  "name": "UserFactory",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-cli": "latest",
+    "grunt-node-webkit-builder": "latest",
+    "coffee-script": "^1.9.1",
+    "gulp": "^3.8.11",
+    "gulp-github-release": "git://github.com/aluxian/gulp-github-release.git",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-node-webkit-builder": "git://github.com/leftstick/gulp-node-webkit-builder.git",
+    "gulp-uglify": "^1.2.0",
+    "run-sequence": "^1.0.2",
+    "shelljs": "^0.4.0"
+  },
+  "scripts": {
+    "postinstall": "(cd src && npm install)"
+  },
+  "dependencies": {
+    "change-case": "^2.3.0",
+    "diacritics": "^1.2.1",
+    "easy-zip": "0.0.4",
+    "excel": "^0.1.2",
+    "fs": "0.0.2",
+    "fs-extra": "^0.18.1",
+    "jszip": "^2.5.0",
+    "lodash": "^3.6.0",
+    "mkdirp": "^0.5.0",
+    "path": "^0.11.14",
+    "path-extra": "^1.0.2",
+    "string": "^3.1.1",
+    "xlsx-to-json": "^0.2.3",
+    "underscore": "^1.8.3"
+  },
+  "optionalDependencies": {
+    "gulp-appdmg": "git://github.com/aluxian/gulp-appdmg.git"
+  }
+}
