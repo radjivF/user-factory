@@ -1,0 +1,156 @@
+body{
+	height: 95%;
+  background-image: url(../images/BG.jpg);
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+/*  text-transform: uppercase;*/
+  font-size: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#preferences{
+  font-size: 14px;
+	top: 10px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#drop{
+	font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 3px;
+	border-radius: 200px;
+	border: 3px dashed #fff;
+	text-align: center;
+	color:#fff;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  line-height: 40px;
+  margin-top: 15px;
+}
+
+#drop.hover{
+/*	color:#98c1cc;*/
+/*  transform: rotate(180deg,  scale(2));*/
+/*    -webkit-animation: rotation 2s infinite linear;*/
+    transform:rotate(360deg) ;
+    transition-duration: 0.7s;
+
+
+
+	border-color:#fff;
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  background: #98c1cc;
+  color: #fff;
+  text-align: center;
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 29%;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: #FFF;
+  color: #98c1cc;
+}
+
+#sep {
+  width: 25%;
+  height: 3px;
+  background-color: #FFF;
+  margin: auto;
+  margin-top: -15px;
+}
+
+#form {
+  width: 90%;
+  height: 475px;
+  background-color: #7ca0ae;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+table, th, td {
+  height: 40px;
+}
+
+table {
+  margin: auto;
+}
+
+table tr {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-align: right;
+  color: #fff;
+}
+
+table input {
+  border-radius: 2px;
+  width: 150px;
+  height: 25px;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+}
+
+table select {
+  border-radius: 2px;
+  width: 150px;
+  height: 25px;
+  border: 1px solid #ccc;
+}
