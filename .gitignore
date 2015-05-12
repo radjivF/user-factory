@@ -1,0 +1,5 @@
+.DS_Store
+/tmp
+/build
+/cache
+/app/nwjs.app
