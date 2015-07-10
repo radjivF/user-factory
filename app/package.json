@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.html",
   "window": {
-    "toolbar": false,
-    "height": 740,
-    "width": 555,
+    "toolbar": true,
+    "height": 700,
+    "width": 900,
     "frame": true
   },
   "dependencies": {

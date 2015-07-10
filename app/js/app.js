@@ -95,6 +95,9 @@ function processFormData()
   } else {
 	
 		createJson.createOneJson(name, firstname, email, provider, password, role, language, login);
+		var audio  = new Audio('sound/done.ogg');
+		audio.volume= 0.2;
+		audio.play();
   }
 }
 

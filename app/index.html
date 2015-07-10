@@ -14,14 +14,14 @@
 		<div id="preferences">
 			<h1>User Factory</h1>
 			<div id="sep"></div>
-			<h4>Cet outil permet de créer les Jsons des utilisateurs </h4> 
+			<h4>Cet outil permet de créer les Jsons des utilisateurs </h4>
 			<div id="form">
 				<h2>Créer un utilisateur</h2>
 					<table>
 						<tr>
 							<td><label for="name"> Nom* : </label></td>
 							<td><input type="text" name="name" id="txt_name"></td>
-						</tr>	
+						</tr>
 						<tr>
 							<td><label for="prenom"> Prenom* : </label></td>
 							<td><input type="text" name="prenom" id="txt_firstname"></td>
@@ -30,10 +30,10 @@
 							<td><input type="text" name="email" id="txt_email"></td>
 						</tr>
 						<tr>
-							<td><label for="login">Login* : </label></td>
+							<td><label for="login">Login : </label></td>
 							<td><input type="text" placeholder="Email par defaut" name="login" id="txt_login"></td>
 						</tr>
-						<tr>	
+						<tr>
 							<td><label for="password"> Password* : </label></td>
 							<td><input type="text" name="password" id="txt_password"></td>
 						</tr>
@@ -57,13 +57,17 @@
 					</table>
 				<input class="btn"  name="submit" value="Créer" onclick="processFormData();" readonly="readonly" >
 			</div>
-			<h3>Créer une liste d'utilisateur via un tableau Excel </h3>
-			<h4>Le fichier doit posséder les colonnes suivantes:
-			firstName, lastName, email, provider, password, language, (login), (role)</h4>
+			<div id="drag">
+				<h3>Créer une liste d'utilisateur</br> via un tableau Excel </h3>
+				<h4>Le fichier doit posséder les colonnes</br> suivantes (Attention aux cellules vides):
+				</br>firstName, lastName, email, provider,</br> password, (language), (login), (role)<h4>
+
+			<div id="drop">
+				Déposez votre fichier
+			</div>
+			</div>
 		</div>
-		<div id="drop">
-			Déposez votre fichier
-		</div> 
+
 	</body>
 	<script src="js/app.js" type="text/javascript"></script>
 </html>
